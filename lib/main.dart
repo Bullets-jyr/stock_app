@@ -72,6 +72,28 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
+      bottomNavigationBar: NavigationBar(
+        destinations: [
+          NavigationDestination(
+            icon: Icon(
+              Icons.explore,
+            ),
+            label: 'Explore',
+          ),
+          NavigationDestination(
+            icon: Icon(
+              Icons.commute,
+            ),
+            label: 'Commute',
+          ),
+          NavigationDestination(
+            icon: Icon(
+              Icons.bookmark,
+            ),
+            label: 'Bookmark',
+          ),
+        ],
+      ),
     );
   }
 }
